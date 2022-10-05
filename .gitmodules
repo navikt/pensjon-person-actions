@@ -1,0 +1,3 @@
+[submodule "flytt-oppgave-til-prosjektkolonne"]
+	path = flytt-oppgave-til-prosjektkolonne/assign-gh-item-to-project-field
+	url = https://git.sr.ht/~x10an14/assign-gh-item-to-project-field

@@ -1,0 +1,32 @@
+name: Track repository Issues/PRs
+description: Track repository Issues/PRs in @navikt/pensjon-person's team project
+author: @navikt/pensjon-person
+
+inputs:
+  github_token:
+    description: The token with which to access the GH GraphQL API (needs scopes `org:read`, `projects`, `repo:read`)
+    required: true
+  column_name:
+    description: The column you want the Issue/PR to be put in in the project - e.g. "To do" for newly opened Issues and "In progress" for PRs.
+    required: true
+  organization_name:
+    description: The organization under which the ProjectV2 resides (found in project URL; `github.com/orgs/<org name>/projects/<proj number>`)
+    required: true
+    default: navikt
+  project_number:
+    description: The ProjectV2 number within the specified organization (found in project URL; `github.com/orgs/<org name>/projects/<proj number>`)
+    required: true
+    default: 67
+
+runs:
+  using: docker
+  image: Dockerfile
+  context: assign-gh-item-to-project-field/
+  args:
+    - item
+    - --org-name
+    - ${{ inputs.organization_name }}
+    - --target-column
+    - ${{ inputs.column_name }}
+    - --project_number
+    - ${{ inputs.project_number }}

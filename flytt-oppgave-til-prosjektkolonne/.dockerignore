@@ -1,0 +1,8 @@
+# Ignore everything!
+*
+
+# Except Cargo/Rust files
+!assign-gh-item-to-project-field/Cargo.*
+!assign-gh-item-to-project-field/src/
+!assign-gh-item-to-project-field/rustfmt.toml
+
