@@ -21,7 +21,7 @@ inputs:
 runs:
   using: docker
   image: Dockerfile
-  context: assign-gh-item-to-project-field/
+  context: assign-gh-item-to-project-field
   args:
     - item
     - --org-name
