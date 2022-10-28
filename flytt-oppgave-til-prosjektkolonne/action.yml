@@ -1,6 +1,6 @@
 name: Track repository Issues/PRs
 description: Track repository Issues/PRs in @navikt/pensjon-person's team project
-author: @navikt/pensjon-person
+author: "@navikt/pensjon-person"
 
 inputs:
   github_token:
