@@ -16,7 +16,7 @@ inputs:
   project_number:
     description: The ProjectV2 number within the specified organization (found in project URL; `github.com/orgs/<org name>/projects/<proj number>`)
     required: true
-    default: '67'
+    default: 67
 
 runs:
   using: docker
@@ -28,4 +28,4 @@ runs:
     - --target-column
     - "'${{ inputs.column_name }}'"
     - --project-number
-    - "'${{ inputs.project_number }}'"
+    - ${{ inputs.project_number }}
