@@ -16,12 +16,11 @@ inputs:
   project_number:
     description: The ProjectV2 number within the specified organization (found in project URL; `github.com/orgs/<org name>/projects/<proj number>`)
     required: true
-    default: 67
+    default: '67'
 
 runs:
   using: docker
-  image: Dockerfile
-  #context: assign-gh-item-to-project-field
+  image: flytt-oppgave-til-prosjektkolonne/assign-gh-item-to-project-field@aaaaa
   args:
     - item
     - --org-name
