@@ -20,7 +20,7 @@ inputs:
 
 runs:
   using: docker
-  image: flytt-oppgave-til-prosjektkolonne/assign-gh-item-to-project-field@aaaaa
+  image: docker://ghcr.io/navikt/pensjon-person-actions/flytt-oppgave-til-prosjektkolonne:main
   args:
     - item
     - --org-name
