@@ -24,8 +24,8 @@ runs:
   args:
     - item
     - --org-name
-    - ${{ inputs.organization_name }}
+    - "'${{ inputs.organization_name }}'"
     - --target-column
-    - ${{ inputs.column_name }}
+    - "'${{ inputs.column_name }}'"
     - --project_number
-    - ${{ inputs.project_number }}
+    - "'${{ inputs.project_number }}'"
