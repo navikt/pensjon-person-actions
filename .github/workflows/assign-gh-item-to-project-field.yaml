@@ -4,7 +4,7 @@ name: Create and publish 'assign-gh-item-to-project-field' Docker image
 on:
   push:
     paths:
-    - 'flytt-oppgave-til-prosjektkolonne/assign-gh-item-to-project-field/**'
+    - 'flytt-oppgave-til-prosjektkolonne/**'
   workflow_dispatch:
 
 env:
